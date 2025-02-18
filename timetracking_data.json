@@ -1,0 +1,47 @@
+[
+    {
+        "Description":  " # Hallo",
+        "StartTime":  "02.17.2025 21:00",
+        "EndTime":  "02.17.2025 21:15",
+        "Duration":  "00:15",
+        "TicketId":  null,
+        "EntryType":  "Task"
+    },
+    {
+        "Description":  "",
+        "StartTime":  "02.17.2025 21:00",
+        "EndTime":  "02.17.2025 21:15",
+        "Duration":  "00:15",
+        "TicketId":  null,
+        "EntryType":  "Task"
+    },
+    {
+        "Description":  "fafwdf",
+        "StartTime":  "02.17.2025 21:00",
+        "EndTime":  "02.17.2025 21:15",
+        "Duration":  "00:15",
+        "TicketId":  null,
+        "EntryType":  "Task"
+    },
+    {
+        "Description":  "",
+        "StartTime":  "21:15",
+        "EndTime":  "21:30",
+        "Duration":  "00:15",
+        "TicketId":  null
+    },
+    {
+        "Description":  "",
+        "StartTime":  "23:15",
+        "EndTime":  "23:30",
+        "Duration":  "00:15",
+        "TicketId":  null
+    },
+    {
+        "Description":  "",
+        "StartTime":  "21:15",
+        "EndTime":  "21:30",
+        "Duration":  "00:15",
+        "TicketId":  null
+    }
+]
