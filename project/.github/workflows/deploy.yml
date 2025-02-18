@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
+
   workflow_dispatch:
 
 permissions:
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -29,21 +30,22 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          
+          cache-dependency-path: './project/package-lock.json'
+      
       - name: Install dependencies
-        run: npm install
-        
+        run: cd project && npm install
+      
       - name: Build
-        run: npm run build
-        
+        run: cd project && npm run build
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
-          
+          path: './project/dist'
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
